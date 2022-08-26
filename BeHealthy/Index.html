@@ -1,0 +1,123 @@
+<head>
+    <title>Healty care</title>
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width. initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <section id="banner">
+      <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="treatment.html">TREATMENT</a></li>
+                <li><a href="exercise.html">EXERCISE AND YOGA</a></li>
+                <li><a href="ayurveda.html">AYURVEDA</a></li>
+                <li><a href="homeopathy.html">HOMEOPATHY</a></li>
+                <li><a href="covid19.html">COVID-19</a></li>
+            </ul>
+        </nav>
+    </div>
+        <img src="" class="logo">
+        <div class="container">
+            <div class="outer">
+                <div class="banner-text">
+                    <h1>BeHealthy</h1>
+                    <p>Happiness Begins with Health</p>
+                    <div class="banner-btn">
+                        <a href="#"><span></span>Register</a>
+                        <a href="#"><span></span>Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="footers">
+          <footer>
+            <div class="main-content">
+              <div class="left box">
+                <h2>About us</h2>
+                <div class="content">
+                  <p>Hello World!</p>
+                  <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="center box">
+                <h2>Address</h2>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Pune, Maharashtra</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">020-12345678</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">abc@example.com</span>
+                  </div>
+                </div>
+              </div>
+              <div class="right box">
+                <h2>Contact us</h2>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <center>
+                <span class="credit">Created By <a href="#">Hackersss</a> | </span>
+                <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+              </center>
+            </div>
+          </footer>
+    </section>
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var sidenav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        sidenav.style.right=="-250px";
+
+        menubtn.onclick=function(){
+            if(sidenav.style.right=="-250px"){
+                sidenav.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                sidenav.style.right="-250px";
+                menu.src="menu.png";
+
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

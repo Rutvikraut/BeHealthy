@@ -1,0 +1,85 @@
+<head>
+    <title>Healty care</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="" href="treatment.html">
+    <meta name="viewport" content="width=device-width. initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <section id="banner1">
+        <div id="sidenav">
+          <nav>
+              <ul>
+                  <li><a href="Index.html">HOME</a></li>
+                  <li><a href="treatment.html">TREATMENT</a></li>
+                  <li><a href="exercise.html">EXERCISE AND YOGA</a></li>
+                  <li><a href="ayurveda.html">AYURVEDA</a></li>
+                  <li><a href="homeopathy.html">HOMEOPATHY</a></li>
+                  <li><a href="covid19.html">COVID-19</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="title-text">
+        <h1>Treatment</h1>
+      </div>
+      <div class="treatment-box">
+        <div class="treatment-consult">
+          <img src="fever.jpg">
+          <div class="overlay"></div>
+          <div class="treatment-description">
+            <h3>Fever</h3>
+            <hr>
+            <p>Medications such as paracetamol <br> and ibuprofen may help to ease discomfort. Avoid giving children aspirin because this may cause a rare, serious condition.</p>
+          </div>
+        </div>
+        <div class="treatment-consult">
+          <img src="cold.jpg">
+          <div class="overlay"></div>
+          <div class="treatment-description">
+            <h3>Common Cold</h3>
+            <hr>
+            <p>Rinsing the inside of the nose with warm salt water to flush out irritants and excess mucus.Often done using a neti pot or squeeze bottle<br>Soothes sore throats.<br>An oil made from mint that soothes <br>sore throats and relieves itching.</p>
+          </div>
+        </div>
+        <div class="treatment-consult">
+          <img src="cough.jpg">
+          <div class="overlay"></div>
+          <div class="treatment-description">
+            <h3>Cough</h3>
+            <hr>
+            <p>Liquids, lozenges, cough drops, vapourisers and steamy showers may help to soothe a cough. Cough medicine may also help, but it's best to check with a doctor before administering to a child under six</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+          
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var sidenav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        sidenav.style.right=="-250px";
+
+        menubtn.onclick=function(){
+            if(sidenav.style.right=="-250px"){
+                sidenav.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                sidenav.style.right="-250px";
+                menu.src="menu.png";
+
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

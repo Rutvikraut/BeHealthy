@@ -1,0 +1,62 @@
+<head>
+    <title>Healty care</title>
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width. initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>  
+    <section id="banner3">
+      <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="treatment.html">TREATMENT</a></li>
+                <li><a href="exercise.html">EXERCISE AND YOGA</a></li>
+                <li><a href="ayurveda.html">AYURVEDA</a></li>
+                <li><a href="homeopathy.html">HOMEOPATHY</a></li>
+                <li><a href="covid19.html">COVID-19</a></li>
+                            
+              </ul>
+        </nav>
+    </div>
+        <div class="infor-title">
+            <h1>Ayurveda</h1>
+            <p>Ayurvedic medicine (“Ayurveda” for short) is one of the world's oldest holistic (“whole-body”) healing systems.It was developed more than 3,000 years ago in India.
+                <br>It’s based on the belief that health and wellness depend on a delicate balance between the mind, body, and spirit. Its main goal is to promote good health, not fight disease. 
+                Students of CAM therapy believe that everything in the universe – dead or alive – is connected. If your mind, body, and spirit are in harmony with the universe, you have good health.
+                When something disrupts this balance, you get sick.
+                 Among the things that can upset this balance are genetic or birth defects, injuries, climate and seasonal change, age, and your emotions.
+                These combine in the human body to form three life forces or energies, called doshas. They control how your body works. They are Vata dosha (space and air); Pitta dosha (fire and water); 
+                and Kapha dosha (water and earth).
+            </p>
+        <div class="ayurveda-btn">
+            <a href="https://en.wikipedia.org/wiki/Ayurveda"><span></span>Read more</a>
+        </div>
+        </div>
+    </section>
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var sidenav=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+        sidenav.style.right=="-250px";
+
+        menubtn.onclick=function(){
+            if(sidenav.style.right=="-250px"){
+                sidenav.style.right="0";
+                menu.src="close.png";
+            }
+            else{
+                sidenav.style.right="-250px";
+                menu.src="menu.png";
+
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+    </script>
+</body>
+</html>
